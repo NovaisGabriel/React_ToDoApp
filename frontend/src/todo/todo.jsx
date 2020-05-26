@@ -13,7 +13,7 @@ export default class Todo extends Component {
         this.state = {description: '', list: []}
         this.handleChange = this.handleChange.bind(this)
         this.handleAdd = this.handleAdd.bind(this)
-        this.handleRemove = thishandleRemove.bind(this)
+        this.handleRemove = this.handleRemove.bind(this)
         this.refresh()
     }
 
@@ -44,6 +44,12 @@ export default class Todo extends Component {
                 <TodoForm description={this.state.description}
                     handleChange = {this.handleChange}
                     handleAdd = {this.handleAdd}/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>   
+                <br/>
+                <br/>
                 <TodoList list={this.state.list} 
                     handleRemove={this.handleRemove}/>
             </div>
